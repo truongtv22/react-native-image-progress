@@ -25,6 +25,7 @@ export const createImageProgress = ImageComponent =>
       source: PropTypes.any,
       style: PropTypes.any,
       imageStyle: PropTypes.object,
+      imageChildren: PropTypes.node,
       threshold: PropTypes.number.isRequired,
     };
 
@@ -166,6 +167,7 @@ export const createImageProgress = ImageComponent =>
         style,
         threshold,
         imageStyle,
+        imageChildren,
         ...props
       } = this.props;
 
